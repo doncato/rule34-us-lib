@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", ]
+build-backend = "hatchling.build"
+
+[project]
+name = "rule34-us-lib"
+version = "0.0.1"
+authors = [
+  { name="doncato", email="doncato@notarobot.cyou" },
+]
+description = "A python wrapper for the website https://rule34.us/"
+keywords = [ "rule34", "rule34.us", "wrapper", "parser", "html", "api", "scraping" ]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent",
+  "Topic :: Internet",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/doncato/rule34-us-lib"
+"Bug Tracker" = "https://github.com/doncato/rule34-us-lib/issues"
