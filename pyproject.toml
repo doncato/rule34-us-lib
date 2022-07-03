@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling", ]
+requires = ["hatchling", "aiohttp", "bs4", "typing",]
 build-backend = "hatchling.build"
 
 [project]
 name = "rule34-us-lib"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="doncato", email="doncato@notarobot.cyou" },
 ]
