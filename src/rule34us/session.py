@@ -145,13 +145,13 @@ class Post():
         }
 
         for e in self.tags:
-            if isinstance(TagType.METADATA, e.type):
+            if TagType.METADATA == e.type:
                 r["Metadata"].append(e)
-            elif isinstance(TagType.COPYRIGHT, e.type):
+            elif TagType.COPYRIGHT == e.type:
                 r["Copyright"].append(e)
-            elif isinstance(TagType.CHARACTER, e.type):
+            elif TagType.CHARACTER == e.type:
                 r["Character"].append(e)
-            elif isinstance(TagType.ARTIST, e.type):
+            elif TagType.ARTIST == e.type:
                 r["Artist"].append(e)
             else:
                 r["Tag"].append(e)
