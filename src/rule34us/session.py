@@ -132,7 +132,7 @@ class Post():
             r.append(e.value)
         return r
 
-    def tags_obj(self) -> obj:
+    def tags_obj(self):
         """
         Get all Tags as a dict of lists containing all tags
         """
