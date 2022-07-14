@@ -22,7 +22,7 @@ class TestBrowse(unittest.IsolatedAsyncioTestCase):
     async def test_account(self):
         session = await r34.Session().init()
         account = r34.Account(session)
-        await account.login("None3065", "Weird14")
+        await account.login("", "")
         id = await account.get_account_id()
         self.assertEqual(id, "30249")
         await account.add_favourite("1")
