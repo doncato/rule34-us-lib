@@ -131,3 +131,29 @@ class Post():
         for e in self.tags:
             r.append(e.value)
         return r
+
+    def tags_obj(self) -> obj:
+        """
+        Get all Tags as a dict of lists containing all tags
+        """
+        r = {
+            "Tag": [],
+            "Artist": [],
+            "Character": [],
+            "Copyright": [],
+            "Metadata": [],
+        }
+
+        for e in self.tags:
+            if isinstance(TagType.METADATA, e):
+                r["Metadata"].append(e)
+            elif isinstance(TagType.COPYRIGHT, e):
+                r["Copyright"].append(e)
+            elif isinstance(TagType.CHARACTER, e):
+                r["Character"].append(e)
+            elif isinstance(TagType.ARTIST, e):
+                r["Artist"].append(e)
+            else:
+                r["Tag"].append(e)
+
+        return r
